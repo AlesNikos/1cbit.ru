@@ -1,4 +1,16 @@
-body {
-  height: 100vh;
-  background-color: blue;
+.btn {
+  padding: 20px 24px 16px;
+  color: #fff;
+  text-align: left;
+}
+.btn .btn-primary {
+  background-color: #E50071;
+}
+.btn .btn-secondary {
+  background-color: #040C17;
+}
+.btn .slider-left,
+.btn .slider-right {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
 }
