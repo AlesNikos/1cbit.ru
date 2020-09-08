@@ -1,4 +1,22 @@
-body {
-  height: 100vh;
-  background-color: blue;
+.services {
+  padding-top: 80px;
+  background-image: url('../img/services-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services .main-title {
+  max-width: 1045px;
+  width: 100%;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 76px;
+  line-height: 110%;
+  color: #33373C;
+}
+.services .main-title span {
+  color: #E50071;
+}
+.services .button .btn {
+  padding: 20px 24px 16px;
+  background-color: #E50071;
 }
