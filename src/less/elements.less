@@ -20,12 +20,26 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'SuisseIntl';
+}
+
 @keyframes rotating-loader {
     from {
         transform: rotate(0deg);  
     }
     to {
         transform: rotate(360deg)
+    }
+}
+
+a {
+    color: @color-pink-1;
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover {
+        text-decoration: none;
+        color: fade(@color-pink-1, 70);
     }
 }
 
@@ -88,6 +102,9 @@
         &.loading {
             &:before {
                 display: none;
+            }
+            &:after {
+                margin-left: 55px;
             }
         }
         &:before {
@@ -154,6 +171,55 @@
             &:after {
                 background-image: url('../img/icons/28/icon-play-grey.svg');
             }
+        }
+    }
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    .custom-control-input {
+        opacity: 0;
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
+    .custom-control-label {
+        display: flex;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+        &:before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            background: #fff;
+            margin-right: 10px;
+        }
+
+        &:after {
+            content: '';
+            opacity: 0;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 2px;
+            transition: opacity 0.09s;
+            background-image: url('../img/icons/20/icon-checkmark-pink.svg');
+        }
+    }
+    .custom-control-input:checked+.custom-control-label {
+        &:after { 
+            opacity: 1;
         }
     }
 }
