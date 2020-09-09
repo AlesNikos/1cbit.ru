@@ -1,6 +1,22 @@
 * {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -8px;
+}
 @keyframes rotating-loader {
   from {
     transform: rotate(0deg);
@@ -60,6 +76,7 @@
   background-image: url('../img/icons/28/icon-loader.png');
   width: 24px;
   height: 24px;
+  margin-left: 55px;
   animation: rotating-loader 1.2s linear infinite;
 }
 .btn.btn-arrow:after {
@@ -147,6 +164,9 @@ body {
 }
 body .container {
   max-width: 1216px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
 }
 a {
   text-decoration: none;
@@ -188,32 +208,16 @@ a:hover {
 .hero .button {
   margin-bottom: 80px;
 }
-.hero .button .btn {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 18px 24px 18px;
-  background-color: #E50071;
-  border-color: transparent;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.005em;
-  border: none;
-  border-radius: 0;
-}
-.hero .button .btn:after {
-  content: '';
-  width: 55px;
-  height: 16px;
-  margin-left: 24px;
-  background: url('../img/icons/28/icon-long-arrow.svg') no-repeat right;
-}
 .hero .services .items {
   margin: 0 -20px;
 }
 .hero .services .items .item-wrap {
+  position: relative;
+  width: 100%;
   padding: 0 20px;
+  -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+  max-width: 33.333333%;
 }
 .hero .services .items .item {
   min-height: 250px;
@@ -262,4 +266,29 @@ a:hover {
   text-align: center;
   letter-spacing: 0.003em;
   color: #7B7D7F;
+  transition: all 0.3s;
+}
+@media (min-width: 992px) {
+  .hero .services .button-wrap .btn-more:hover {
+    color: #a2a3a5;
+  }
+}
+.achievement {
+  padding: 100px 0 300px;
+  background: #040C17;
+}
+.achievement .section-name {
+  max-width: 931px;
+}
+.achievement .section-name .title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 120%;
+  color: #fff;
+}
+.achievement .items .item .count {
+  font-weight: 300;
+  font-size: 76px;
+  line-height: 99px;
 }
