@@ -243,16 +243,24 @@ h1, h2, h3, h4, h5, h6 {
     .custom-control-label {
         display: flex;
         align-items: center;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
         &:hover {
             cursor: pointer;
         }
         &:before {
             content: '';
             width: 24px;
+            min-width: 24px;
             height: 24px;
+            align-self: flex-start;
             display: inline-block;
             background: #fff;
             margin-right: 10px;
+            @media (max-width: 768px) {
+                margin-right: 14px;
+            }
         }
 
         &:after {
@@ -262,6 +270,7 @@ h1, h2, h3, h4, h5, h6 {
             height: 20px;
             position: absolute;
             left: 2px;
+            top: 0;
             transition: opacity 0.09s;
             background-image: url('../img/icons/20/icon-checkmark-pink.svg');
         }
@@ -349,9 +358,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.005em;
-    padding: 17px 23px 0;
+    padding: 22px 23px 0;
     border: 1px solid @color-grayscale-4;
     background: #fff;
+    @media (max-width: 768px) {
+        padding: 13px 23px 0;
+    }
     &.error {
         border: 1px solid @color-error !important;
     }
@@ -362,6 +374,9 @@ h1, h2, h3, h4, h5, h6 {
         border: none;
         margin-top: 11px;
         padding-bottom: 6px;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
         &:focus, &:active  {
             border: none;
             border-radius: 0;
@@ -371,6 +386,10 @@ h1, h2, h3, h4, h5, h6 {
             &+label {
                 top: 6px;
                 font-size: 14px;
+                @media (max-width: 768px) {
+                    top: 4px;
+                    font-size: 12px;
+                }
             }
         }
         
@@ -382,6 +401,10 @@ h1, h2, h3, h4, h5, h6 {
         left: 23px;
         transition: all 0.2s ease-in-out;
         color: @color-grayscale-3;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            top: 13px;
+        }
     }
 }
 

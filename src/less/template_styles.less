@@ -840,27 +840,80 @@ a {
     padding: 100px 0;
     background-color: @color-grayscale-text;
     color: #fff;
+    &.pink {
+        background-color: @color-pink-2;
+        .custom-input {
+            background-color: #fff;
+            input {
+                background-color: #fff;
+                color: @color-grayscale-text;
+            }
+        }
+        .btn-primary {
+            background: #000;
+        }
+    }
+    @media (max-width: 1024px) {
+        padding: 80px 0;
+    }
+    @media (max-width: 1024px) {
+        padding: 40px 0;
+    }
     .container {
         display: flex;
+        @media (max-width: 575px) {
+            flex-direction: column;
+        }
     }
     .text-col {
-        margin-right: 40px;
+        margin-right: 24px;
+        @media (max-width: 1024px) {
+            flex: 0;
+            min-width: 49%;
+        }
+        @media (max-width: 768px) {
+            margin-right: 16px;
+        }
+        @media (max-width: 575px) {
+            margin: 0 0 20px;
+        }
+    }
+    .form-col {
+        flex: 1;
     }
     .title {
         width: 80%;
         font-weight: bold;
         font-size: 42px;
         line-height: 120%;
-        margin-bottom: 20px;
+        margin: 2px 0 20px;
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+            line-height: 130%;
+            margin-bottom: 8px;
+        }
     }
     .text {
         width: 80%;
         font-size: 18px;
         line-height: 160%;
         letter-spacing: 0.003em;
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 150%;
+        }
     }
     .input-wrapper {
         margin-bottom: 20px;
+        @media (max-width: 768px) {
+            margin-bottom: 16px;
+        }
     }
 
     .custom-input {
@@ -873,5 +926,32 @@ a {
             background: @color-grayscale-1;
             color: #fff;
         }
+        label {
+            @media (max-width: 768px) {
+                font-size: 14px;
+                top: 13px;
+            }
+        }
+        &.error+.error-message {
+            display: block;
+        }
     }
+    .custom-checkbox {
+        margin-bottom: 20px;
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+        }
+    }
+    .btn-primary {
+        width: 100%;
+        padding: 23px 24px 19px;
+        @media (max-width: 768px) {
+            padding: 15px 24px 12px;
+        }
+    }
+    .error-message {
+        display: none;
+    }
+
+    
 }
