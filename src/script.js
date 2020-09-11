@@ -1,6 +1,7 @@
 
 $('.header .burger').on('click', function(){
     $(this).parents('.header').toggleClass('opened');
+    $('body').toggleClass('overflow');
 });
 
 $('.custom-input, .custom-select').styler();

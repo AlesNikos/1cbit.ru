@@ -11,16 +11,68 @@
     <link rel="stylesheet" href="../vendor/scrollbar/jquery.scrollbar.css">
     <link rel="stylesheet" href="../vendor/swiper/swiper.min.css">
     <link rel="stylesheet" href="../vendor/normalize/normalize.css">
+    <link rel="stylesheet" href="../vendor/formstyler/jquery.formstyler.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
+
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo"></a>
+            <div class="links">
+                <a href="#" class="link">Портфолио</a>
+                <a href="#" class="link">Продукты</a>
+                <a href="#" class="link">Услуги</a>
+                <a href="#" class="link">События</a>
+                <a href="#" class="link">О компании</a>
+            </div>
+            <a href="#" class="search"></a>
+            <div class="languages">
+
+                <select class="custom-select language-select">
+                    <option>RU</option>
+                    <option>EN</option>
+                    <option>CH</option>
+                </select>
+
+                <script>
+
+                </script>
+            </div>
+            <div class="burger"></div>
+        </div>
+        <div class="mobile-menu">
+            <div class="links">
+                <a href="#" class="link">Портфолио</a>
+                <a href="#" class="link">Продукты</a>
+                <a href="#" class="link">Услуги</a>
+                <a href="#" class="link">События</a>
+                <a href="#" class="link">О компании</a>
+                <a href="#" class="link">Поиск по сайту</a>
+            </div>
+            <div class="info">
+                <div class="copyright item">
+                    © 2010-2020 Офис «Спортивная» компания «Первый Бит»
+                </div>
+                <div class="adress item">
+                    119048, Москва, ул. Трубецкая, <br>дом 28, строение 1
+                </div>
+                <div class="contacts item">
+                    <a href="#" class="phone">+7 (495) 213-83-61</a>
+                    <a href="#" class="email">info@1solution.ru</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <div class="wrapper">
 
 
 
         <div class="main-page">
+
             <div class="wrapper-section">
 
                 <div class="hero">
@@ -107,6 +159,7 @@
 
             </div>
 
+            <!-- achievement block -->
             <div class="wrapper-section">
                 <div class="achievement">
                     <div class="container">
@@ -196,30 +249,91 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="video-block">
-                            <div class="video"
-                                style="background-image: url('https://img.youtube.com/vi/J3E6ULw28d0/maxresdefault.jpg')">
-                                <a href="javascript:void(0)" class="btn btn-play"></a> 
-                            </div>
-
-                        </div> -->
                     </div>
                 </div>
             </div>
 
+            <!-- video block -->
             <div class="wrapper-section">
                 <div class="container">
                     <div class="video-block">
                         <div class="video" style="background-image: url('../img/video-bg.jpg')">
-                            <a href="javascript:void(0)" class="btn btn-play"></a>
                         </div>
+                        <a href="javascript:void(0)" class="btn btn-play"></a>
    
                     </div>
 
                 </div>
             </div>
 
+
+            <!-- our projects -->
+            <div class="wrapper-section">
+                <div class="projects-section">
+                    <div class="container">
+                        <div class="section-name">
+                            <h2 class="title">Мы сделали проекты</h2>
+                            <a href="#" class="all-link">Все проекты</a>
+                        </div>
+                        <div class="items">
+                            <div class="item-wrap">
+                                <a href="#" class="item">
+                                    <div class="img">
+                                        <img src="../img/projects/image-1.png" alt="">
+                                    </div>
+                                    <div class="text">Автоматизация налогового учёта в японской корпорации Yamaha</div>
+                                </a>
+                            </div>
+                            <div class="item-wrap">
+                                <a href="#" class="item">
+                                    <div class="img">
+                                        <img src="../img/projects/image-2.png" alt="">
+                                    </div>
+                                    <div class="text">Внедрение «1С:ERP» в глобальной табачной компании, ведущей в Южной Корее и пятой в мире
+                                        <i class="icon icon-play"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item-wrap">
+                                <a href="#" class="item">
+                                    <div class="img">
+                                        <img src="../img/projects/image-3.png" alt="">
+                                    </div>
+                                    <div class="text">Внедрение «1С:ERP» на крупнейшем производстве ювелирных изделий из
+                                        золота и серебра</div>
+                                </a>
+                            </div>
+                            <div class="item-wrap">
+                                <a href="#" class="item">
+                                    <div class="img">
+                                        <img src="../img/projects/image-4.png" alt="">
+                                    </div>
+                                    <div class="text">Внедрение аналитической системы у одного из мировых производителей
+                                        банкоматов и другого оборудования для банков.</div>
+                                </a>
+                            </div>
+                            <div class="item-wrap">
+                                <a href="#" class="item">
+                                    <div class="img">
+                                        <img src="../img/projects/image-5.png" alt="">
+                                    </div>
+                                    <div class="text">Создание облачной системы хранения персональных данных
+                                        автомобильного концерна Fiat Chrysler Automobiles</div>
+                                </a>
+                            </div>
+                            <div class="item-wrap">
+                                <a href="#" class="item">
+                                    <div class="img">
+                                        <img src="../img/projects/image-6.png" alt="">
+                                    </div>
+                                    <div class="text">Разработка сис­те­мы бизнес-ана­ли­ти­ки на платформе Qlik Sense
+                                        для американской сети пиццерий</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -241,6 +355,7 @@
     <script src="../vendor/maskedinput/jquery.maskedinput.min.js"></script>
     <script src="../vendor/scrollbar/jquery.scrollbar.min.js"></script>
     <script async src="../vendor/counter/purecounter_vanilla.js"></script>
+    <script src="../vendor/formstyler/jquery.formstyler.min.js"></script>
     <script src="../script.js"></script>
 
     <script>

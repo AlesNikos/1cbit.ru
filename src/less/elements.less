@@ -219,10 +219,42 @@ h1, h2, h3, h4, h5, h6 {
                 margin-left: 5px;
             }
         }
-        &:hover {
-            background-color: @color-grayscale-5;
-            &:after {
-                background-image: url('../img/icons/28/icon-play-grey.svg');
+        // &:hover {
+        //     background-color: @color-grayscale-5;
+        //     &:after {
+        //         background-image: url('../img/icons/28/icon-play-grey.svg');
+        //     }
+        // }
+    }
+}
+
+.section-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 120%;
+        color: @color-grayscale-text;
+
+        @media(max-width: 768px) {
+            font-size: 24px;
+            line-height: 130%;
+        }
+
+        @media(max-width: 575px) {
+            font-size: 22px;
+        }
+    }
+
+    .all-link {
+        color: @color-pink-1;
+        transition: all 0.2s;
+        @media(min-width: 992px) {
+            &:hover {
+                color: fade(@color-pink-1, 60);
             }
         }
     }
@@ -288,6 +320,7 @@ h1, h2, h3, h4, h5, h6 {
         .jq-selectbox__select {
             &:after {
                 transform: rotate(0deg);
+                margin-left: 6px;
             }
         }
     }
@@ -316,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
             margin-left: 6px;
             background-image: url('../img/icons/12/icon-expand-default.svg');
             transform: rotate(180deg);
-            transition: all 0.15s ease-in-out;
+            transition: transform 0.15s ease-in-out;
             
         }
     }
