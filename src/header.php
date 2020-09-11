@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../vendor/bootstrap/bootstrap-select.min.css">
     <link rel="stylesheet" href="../vendor/scrollbar/jquery.scrollbar.css">
     <link rel="stylesheet" href="../vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="../vendor/normalize/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>

@@ -1,36 +1,10 @@
-// $(document).ready(function () {
 
-//     var options = {
-//         useEasing: true,
-//         useGrouping: true,
-//         separator: ',',
-//         decimal: '.',
-//         prefix: '',
-//         suffix: '+'
-//     };
+$('.header .burger').on('click', function(){
+    $(this).parents('.header').toggleClass('opened');
+});
 
-//     let demo = new CountUp('count-1', 8);
-//     let demo1 = new CountUp('count-2', 20, options);
-//     // if (!demo.error) {
-//     //     demo.start();
-//     // } else {
-//     //     console.error(demo.error);
-//     // }
+$('.custom-input, .custom-select').styler();
 
-//     let target = $('.achievement .items');
-//     let targetPos = target.offset().top;
-//     let winHeight = $(window).height();
-//     let scrollToElem = targetPos - winHeight;
-
-//     $(window).scroll(function () {
-//         var winScrollTop = $(this).scrollTop();
-//         if (winScrollTop > scrollToElem) {
-//             demo.start();
-//             demo1.start();
-//             // alert('test');
-//             $(window).unbind('scroll');
-//         }
-//     });
-
-
-// });
+$('.custom-input input').on('focusout', function(){
+    $(this).val() != '' ? $(this).addClass('filled') : $(this).removeClass('filled')
+})
