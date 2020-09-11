@@ -20,9 +20,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'SuisseIntl';
-}
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -57,26 +54,32 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-a {
-    color: @color-pink-1;
-    text-decoration: none;
-    transition: color 0.2s;
-    &:hover {
-        text-decoration: none;
-        color: fade(@color-pink-1, 70);
-    }
-}
+// a {
+//     color: @color-pink-1;
+//     text-decoration: none;
+//     transition: color 0.2s;
+//     &:hover {
+//         text-decoration: none;
+//         color: fade(@color-pink-1, 70);
+//     }
+// }
 
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    padding: 19px 24px;
+    padding: 20px 24px 16px;
     color: #fff;
     border-radius: 0;
     border: none;
     font-size: 16px;
     position: relative;
+
+    @media(max-width: 768px) {
+        padding: 14px 20px 13px;
+        font-size: 14px;
+        line-height: 170%;
+    }
 
     &:after {
         width: 24px;
@@ -123,6 +126,10 @@ a {
             background-image: url('../img/icons/28/icon-long-arrow.svg');
             background-position: right;
             margin-left: 24px;
+
+            @media(max-width: 768px) {
+                width: 37px;
+            }
         }
         &.loading {
             &:before {
@@ -176,7 +183,7 @@ a {
             transform: rotate(90deg);
         }
     }
-    &.play {
+    &.btn-play {
         justify-content: center;
         align-content: center;
         padding: 0;
@@ -184,12 +191,33 @@ a {
         height: 100px;
         border-radius: 100%;
         background-color: #fff;
+
+        @media(max-width: 1024px) {
+            width: 80px;
+            height: 80px;
+        }
+
+        @media(max-width: 768px) {
+            width: 60px;
+            height: 60px;
+        }
+
         &:after {
             content: '';
             width: 28px;
             height: 28px;
             background-image: url('../img/icons/28/icon-play-black.svg');
             margin-left: 8px;
+
+            @media(max-width: 1024px) {
+                width: 22px;
+                height: 22px;
+            }
+            @media(max-width: 768px) {
+                width: 18px;
+                height: 18px;
+                margin-left: 5px;
+            }
         }
         &:hover {
             background-color: @color-grayscale-5;
@@ -200,10 +228,6 @@ a {
     }
 }
 
-body {
-    background-color: #000;
-    color: #fff;
-}
 
 .custom-checkbox {
     display: flex;

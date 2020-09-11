@@ -9,6 +9,7 @@
     <script src="../vendor/jquery/jquery.validate.min.js"></script>
     <script src="../vendor/maskedinput/jquery.maskedinput.min.js"></script>
     <script src="../vendor/scrollbar/jquery.scrollbar.min.js"></script>
+    <<script async src="../vendor/counter/purecounter_vanilla.js"></script>
     <script src="../script.js"></script>
 </body>
 </html>
