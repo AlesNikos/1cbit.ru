@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="../vendor/swiper/swiper.min.css">
     <link rel="stylesheet" href="../vendor/normalize/normalize.css">
     <link rel="stylesheet" href="../vendor/formstyler/jquery.formstyler.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/template_styles.css">
 </head>
 <body>
     
+    <? include 'html/header.php' ?>
+
     <div class="wrapper">
