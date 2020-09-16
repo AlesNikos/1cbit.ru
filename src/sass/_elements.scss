@@ -313,10 +313,7 @@ h1, h2, h3, h4, h5, h6 {
             align-self: flex-start;
             display: inline-block;
             background: #fff;
-            margin-right: 10px;
-            @media (max-width: 768px) {
-                margin-right: 14px;
-            }
+            margin-right: 14px;
         }
 
         &:after {
@@ -351,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .jq-selectbox__select {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         font-size: 16px;
         line-height: 150%;
         color: $color-grayscale-2;
@@ -365,6 +362,11 @@ h1, h2, h3, h4, h5, h6 {
                 }
             }
         }
+
+        @media(max-width: 768px) {
+            font-size: 14px;
+        }
+
         &:after {
             content: '';
             display: block;
