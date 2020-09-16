@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     @media (min-width: 992px) {
         &.btn-primary:hover,  &.btn-secondary:hover{
-            color: fade(#fff, 60);
+            color: rgba(#fff, 0.6);
             &:after,
             &:before {
                 opacity: 0.6;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
     &.loading, &.loading.btn-arrow {
-        color: fade(#fff, 60);
+        color: rgba(#fff, 60);
         &:after {
             background-image: url('../img/icons/28/icon-loader.png');
             width: 24px;
@@ -280,6 +280,33 @@ h1, h2, h3, h4, h5, h6 {
         }
         @media(max-width: 575px) {
             display: none;
+        }
+    }
+}
+
+.accordion-head {
+    list-style: none;
+    position: relative;
+    margin-top: -1px;
+
+    .accordion-body {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        top: 40%;
+        right: 32px;
+        font-size: 24px;
+    }
+
+    &.open {
+        .accordion-body {
+            display: block;
         }
     }
 }
