@@ -287,26 +287,91 @@ h1, h2, h3, h4, h5, h6 {
 .accordion-head {
     list-style: none;
     position: relative;
-    margin-top: -1px;
+    // margin-top: -1px;
+    
+    border-top: 1px solid $color-grayscale-4;
+    &:last-of-type {
+        border-bottom: 1px solid $color-grayscale-4;
+    }
+
+
+    .accordion-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        @media(max-width: 768px) {
+            padding: 20px 0;
+        }
+        @media(max-width: 575px) {
+            align-items: flex-start;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 42px;
+            color: $color-grayscale-text;
+
+            @media(max-width: 768px) {
+                font-size: 22px;
+                line-height: 29px;
+            }
+            @media(max-width: 575px) {
+                max-width: 290px;
+            }
+        }
+        .icon {
+            &:after {
+                content: '';
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 28px;
+                height: 28px;
+                background-image: url(../img/icons/28/icon-arrow-grey.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                transform: rotate(180deg);
+                transition: transform 0.25s;
+
+                @media(max-width: 768px) {
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../img/icons/20/icon-arrow-grey.svg);
+                }
+            }
+        }
+    }
 
     .accordion-body {
         display: none;
+        padding-bottom: 30px;
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.003em;
+        color: $color-grayscale-text;
+
+        @media(max-width: 768px) {
+            padding-bottom: 20px;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+        }
 
         &.active {
             display: block;
         }
     }
 
-    &:before {
-        position: absolute;
-        top: 40%;
-        right: 32px;
-        font-size: 24px;
-    }
-
-    &.open {
-        .accordion-body {
-            display: block;
+    &.opened {
+        .accordion-link {
+            .icon {
+                &:after {
+                    transform: rotate(0);
+                }
+            }
         }
     }
 }
