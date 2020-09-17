@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
             height: 20px;
             position: absolute;
             left: 2px;
-            top: 0;
+            top: 2px;
             transition: opacity 0.09s;
             background-image: url('../img/icons/20/icon-checkmark-pink.svg');
         }
@@ -444,6 +444,36 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.custom-file {
+    input {
+        display: none;
+    }
+    label {
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding: 8px 0;
+        font-size: 16px;
+        line-height: 150%;
+        @media (max-width: 768px){
+            font-size: 14px;
+            padding: 0;
+        }
+        
+        &:before {
+            content: '';
+            display: block;
+            width: 22px;
+            height: 27px;
+            margin-right: 15px;
+            background-image: url('../img/icons/28/icon-file-white.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    
+}
+
 .custom-input {
     position: relative;
     font-size: 16px;
@@ -457,11 +487,12 @@ h1, h2, h3, h4, h5, h6 {
         border: 1px solid $color-error !important;
     }
     
-    input {
+    input, textarea {
         color: $color-grayscale-text;
         width: 100%;
         border: none;
         padding: 33px 23px 6px;
+        background: transparent;
         @media (max-width: 768px) {
             font-size: 14px;
             padding: 25px 23px 6px;
@@ -482,6 +513,15 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
         
+    }
+    textarea {
+        padding-top: 0;
+        margin-top: 33px;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            padding: 0 23px 6px;
+            margin-top: 25px;
+        }
     }
     label {
         position: absolute;
@@ -533,10 +573,13 @@ ul {
             height: 5px;
             background: $color-pink-1;
             left: -15px;
-            top: 12px;
+            top: 0.5em;
         }
         &:not(:last-child) {
             margin-bottom: 10px;
+            @media (max-width: 768px) {
+
+            }
         }
     }
 }

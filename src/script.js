@@ -6,6 +6,17 @@ $('.header .burger').on('click', function(){
 
 $('.custom-input, .custom-select').styler();
 
-$('.custom-input input').on('focusout', function(){
+$('.custom-input input, .custom-input textarea').on('focusout', function(){
     $(this).val() != '' ? $(this).addClass('filled') : $(this).removeClass('filled')
+})
+
+$("input[type=file]").on('change', function () {
+    var fileName = this.files[0].name;
+    $(this).parent().addClass('loaded');
+    $(this).siblings('label').text(fileName);
+});
+$(".uploader-delete").on('click', function () {
+    $(this).siblings('input[type=file]').val('');
+    $(this).siblings('.uploader-text').text('прикрепить файл');
+    $(this).parent().removeClass('loaded');
 })
