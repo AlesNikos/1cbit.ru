@@ -97,5 +97,34 @@ $(document).ready(function() {
         $(this).parent().removeClass('loaded');
     })
 
+    $(".searchbar-input input").on('keyup', function () {
+        if ($(this).val().length > 0) {
+            $(this).parents('.searchbar-input').addClass('filled');
+        }
+        else {
+            $(this).parents('.searchbar-input').removeClass('filled');
+        }
+    });
+
+    $("body").on('click', $('.searchbar-input.filled .search-button'), function () {
+        $('.searchbar-input.filled .search-button').siblings('input').val('');
+        $('.searchbar-input').removeClass('filled');
+    });
+
+    $(".uploader-delete").on('click', function () {
+        $(this).siblings('input[type=file]').val('');
+        $(this).siblings('.uploader-text').text('прикрепить файл');
+        $(this).parent().removeClass('loaded');
+    })
+
+    
+
 });
 
+$('.scrollbar-inner').scrollbar();
+
+function openModal() {
+    $('.popup').jqmHide();
+    $('body').removeClass('overflow');
+    jqmPopup('popup', 'html/popup/popup.html', true);
+};

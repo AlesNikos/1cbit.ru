@@ -26,6 +26,51 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+
+h1 {
+    font-size: 76px;
+    @media (max-width: 768px) {
+        font-size: 42px;
+    }
+}
+h2 {
+    font-size: 56px;
+    line-height: 111%;
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
+}
+h3 {
+    font-size: 42px;
+    line-height: 120%; 
+    @media (max-width: 768px) {
+        font-size: 30px;
+    } 
+}
+h4 {
+    font-size: 32px;
+    line-height: 125%;
+    @media (max-width: 768px) {
+        font-size: 22px;
+    }
+}
+h5 {
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: 0.003px;
+    font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+h6 {
+    font-size: 22px;
+    line-height: 140%;
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -644,6 +689,39 @@ ul {
             margin-bottom: 10px;
             @media (max-width: 768px) {
 
+            }
+        }
+    }
+}
+
+ol {
+    margin: 28px 0 32px;
+    padding: 0;
+    counter-reset: item;
+    @media (max-width: 768px) {
+        margin: 15px 0 16px;
+    }
+    @media (max-width: 575px) {
+        margin: 15px 0 20px;
+    }
+    li {
+        display: flex;
+        line-height: 160%;
+        margin-bottom: 10px;
+        @media (max-width: 768px) {
+            margin-bottom: 9px;
+        }
+        @media (max-width: 575px) {
+            line-height: 155%;
+        }
+        &:before {
+            display: block;
+            margin-right: 16px;
+            content: counter(item) ". ";
+            counter-increment: item;
+            color: $color-pink-1;
+            @media (max-width: 768px) {
+                margin-right: 8px;
             }
         }
     }
