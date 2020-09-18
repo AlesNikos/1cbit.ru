@@ -80,7 +80,12 @@ $(document).ready(function() {
 
     };
 
-    $tabs('.tabs');
+    if ($('.tabs').length > 0) {
+        
+        $tabs('.tabs');
+
+    }
+
 
     $('.custom-input input, .custom-input textarea').on('focusout', function () {
         $(this).val() != '' ? $(this).addClass('filled') : $(this).removeClass('filled')
