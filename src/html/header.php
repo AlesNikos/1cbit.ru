@@ -15,7 +15,7 @@
             <select class="custom-select language-select">
                 <option>RU</option>
                 <option>EN</option>
-                <option>CH</option>
+                
             </select>
             
             <script>

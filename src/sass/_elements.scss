@@ -27,34 +27,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-h1 {
+h1, .h1 {
     font-size: 76px;
     @media (max-width: 768px) {
         font-size: 42px;
     }
 }
-h2 {
+h2, .h2 {
     font-size: 56px;
     line-height: 111%;
     @media (max-width: 768px) {
         font-size: 32px;
     }
 }
-h3 {
+h3, .h3 {
     font-size: 42px;
     line-height: 120%; 
     @media (max-width: 768px) {
         font-size: 30px;
     } 
 }
-h4 {
+h4, .h4 {
     font-size: 32px;
     line-height: 125%;
     @media (max-width: 768px) {
         font-size: 22px;
     }
 }
-h5 {
+h5, .h5 {
     font-size: 24px;
     line-height: 135%;
     letter-spacing: 0.003px;
@@ -63,7 +63,7 @@ h5 {
         font-size: 20px;
     }
 }
-h6 {
+h6, .h6 {
     font-size: 22px;
     line-height: 140%;
     @media (max-width: 768px) {
