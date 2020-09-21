@@ -1,79 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Первый БИТ</title>
-    <!-- <link rel="stylesheet" href="../../vendor/bootstrap/bootstrap.css"> -->
-    <link rel="stylesheet" href="../../vendor/bootstrap/bootstrap-select.min.css">
-    <link rel="stylesheet" href="../../vendor/scrollbar/jquery.scrollbar.css">
-    <link rel="stylesheet" href="../../vendor/swiper/swiper.min.css">
-    <link rel="stylesheet" href="../../vendor/normalize/normalize.css">
-    <link rel="stylesheet" href="../../vendor/fonts/style.css">
-    <link rel="stylesheet" href="../../vendor/formstyler/jquery.formstyler.css">
-    <link rel="stylesheet" href="../../css/template_styles.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo"></a>
-            <div class="links">
-                <a href="#" class="link">Портфолио</a>
-                <a href="#" class="link">Продукты</a>
-                <a href="#" class="link">Услуги</a>
-                <a href="#" class="link">События</a>
-                <a href="#" class="link">О компании</a>
-            </div>
-            <a href="#" class="search"></a>
-            <div class="languages">
-                <!-- <div class='current-language'>RU</div>-->
-
-                <select class="custom-select language-select">
-                    <option>RU</option>
-                    <option>EN</option>
-                    
-                </select>
-
-                <script>
-
-                </script>
-            </div>
-            <div class="burger"></div>
-        </div>
-        <div class="mobile-menu">
-            <div class="links">
-                <a href="#" class="link">Портфолио</a>
-                <a href="#" class="link">Продукты</a>
-                <a href="#" class="link">Услуги</a>
-                <a href="#" class="link">События</a>
-                <a href="#" class="link">О компании</a>
-                <a href="#" class="link">Поиск по сайту</a>
-            </div>
-            <div class="info">
-                <div class="copyright item">
-                    © 2010-2020 Офис «Спортивная» компания «Первый Бит»
-                </div>
-                <div class="adress item">
-                    119048, Москва, ул. Трубецкая, <br>дом 28, строение 1
-                </div>
-                <div class="contacts item">
-                    <a href="#" class="phone">+7 (495) 213-83-61</a>
-                    <a href="#" class="email">info@1solution.ru</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="inner-wrapper">
-        <div class="wrapper-section">
-            <a href="javascript:void(0);" onclick="openModal()" class="call">ВЫЗВАТЬ ПОПАП</a>
-        </div>
-    </div>
-    </div>
-
-    <footer class="footer">
+<footer class="footer">
         <div class="container">
             <a href="#" class="logo"></a>
             <div class="row">
@@ -137,10 +62,10 @@
                                 <a href="#" class="item yt"></a>
                                 <a href="#" class="item in"></a>
                             </div>
-
+                        
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
             <div class="row">
@@ -167,17 +92,3 @@
             </div>
         </div>
     </footer>
-
-    <script src="../../vendor/jquery/jquery.min.js"></script>
-    <script src="../../vendor/bootstrap/bootstrap-select.min.js"></script>
-    <script src="../../vendor/jquery/jquery.modal.js"></script>
-    <script src="../../vendor/jquery/jquery.validate.min.js"></script>
-    <script src="../../vendor/maskedinput/jquery.maskedinput.min.js"></script>
-    <script src="../../vendor/scrollbar/jquery.scrollbar.min.js"></script>
-    <script src="../../vendor/formstyler/jquery.formstyler.min.js"></script>
-    <script src="../../script.js"></script>
-</body>
-
-
-
-</html>
