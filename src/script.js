@@ -122,21 +122,28 @@ $(document).ready(function() {
         $(this).parent().removeClass('loaded');
     })
 
-    
+    $('.projects-items .item').each(function () {
+        $(this).on('mouseenter', function () {
+            $(this).find('.grayscale').addClass('grayscale-off');
+        })
+        $(this).on('mouseleave', function () {
+            $(this).find('.grayscale').removeClass('grayscale-off');
+        })
+    })
 
 });
 
-var swiper = new Swiper('.swiper-container', {
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    autoHeight: true
-});
+// var swiper = new Swiper('.swiper-container', {
+//     pagination: {
+//         el: '.swiper-pagination',
+//         type: 'bullets',
+//     },
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     autoHeight: true
+// });
 
 $('.scrollbar-inner').scrollbar();
 
