@@ -5145,6 +5145,11 @@ a {
             font-size: 24px;
             line-height: 135%;
             border: none;
+            &::-ms-clear {
+                display: none;
+                height: 0;
+                width: 0;
+            }
             @media (max-width: 1024px) {
                 padding: 33px 30px;
             }
@@ -5733,6 +5738,9 @@ a {
         border-radius: 100%;
         margin-bottom: 37px;
         position: relative;
+        @media (max-width: 768px) {
+            margin-bottom: 16px;
+        }
         &:after {
             content: '';
             position: absolute;
@@ -5753,6 +5761,10 @@ a {
         line-height: 73px;
         color: #fff;
         text-align: center;
+        @media (max-width: 768px) {
+            font-size: 32px;
+            line-height: 130%;
+        }
     }
 }
 
