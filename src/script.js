@@ -123,7 +123,14 @@ $(document).ready(function() {
         $(this).parent().removeClass('loaded');
     })
 
-    
+    $('.projects-items .item').each(function () {
+        $(this).on('mouseenter', function () {
+            $(this).find('.grayscale').addClass('grayscale-off');
+        })
+        $(this).on('mouseleave', function () {
+            $(this).find('.grayscale').removeClass('grayscale-off');
+        })
+    })
 
 });
 
@@ -142,7 +149,6 @@ if ($('.swiper-container').length > 0) {
     });
 
 }
-
 
 $('.scrollbar-inner').scrollbar();
 
