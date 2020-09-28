@@ -669,6 +669,18 @@ h6, .h6 {
     background-position: center;
 }
 
+.icon-check {
+    display: block;
+    margin: auto;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/icons/20/icon-checkmark-pink.svg');
+}
+
 .ig{background-image: url('../img/icons/20/icon-ig.svg');}
 .fb{background-image: url('../img/icons/20/icon-fb.svg');}
 .yt{background-image: url('../img/icons/20/icon-yt.svg');}
