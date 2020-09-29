@@ -1098,7 +1098,8 @@ a {
                 }
                 @media(max-width: 575px) {
                     width: 100%;
-                    height: 50.4vw;
+                    // height: 50.4vw;
+                    height: auto;
                     margin-top: 15px;
                     
                 }
@@ -1112,6 +1113,7 @@ a {
                img {
                    max-width: 100%;
                    max-height: 100%;
+                   width: 100%;
                }
            }
 
@@ -1971,6 +1973,9 @@ a {
             max-width: 1045px;
         }
     }
+    .accordion-body-info {
+        color: $color-grayscale-4;
+    }
 }
 
 .about-company {
@@ -2256,7 +2261,129 @@ a {
             @media(max-width: 1024px) {
                 flex-direction: column;
             }
-            
+            .text-block {
+                max-width: 735px;
+                margin-right: 40px;
+                font-size: 18px;
+                line-height: 29px;
+                letter-spacing: 0.003em;
+                color: $color-grayscale-4;
+
+                @media(max-width: 768px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                }
+
+                p {
+                    margin: 0;
+
+                    &:not(:last-child) {
+                        margin-bottom: 16px;
+                    }
+
+                    span {
+                        color: $color-pink-1;
+                    }
+                }
+
+                .list-wrap {
+                    margin-bottom: 16px;
+
+                    p {
+                        margin-bottom: 10px;
+                    }
+
+                    .list {
+                        display: flex;
+
+                        @media(max-width: 575px) {
+                            flex-direction: column;
+                        }
+
+                        ul {
+                            margin: 0;
+                            max-width: 327px;
+                            width: 100%;
+
+                            &:not(:last-of-type) {
+                                margin-right: 60px;
+                            }
+                        }
+                    }
+                }
+
+                .wrap {
+                    p {
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+
+            .img-block {
+                max-width: 220px;
+
+                @media(max-width: 1024px) {
+                    display: flex;
+                    max-width: 100%;
+                    margin-bottom: 30px;
+                    order: -1;
+                }
+
+                @media(max-width: 1024px) {
+                    margin-bottom: 17px;
+                }
+
+                .img-wrap {
+                    width: 220px;
+                    height: 220px;
+                    margin-bottom: 20px;
+                    flex-shrink: 0;
+
+                    @media(max-width: 1024px) {
+                        margin: 0 20px 0 0;
+                    }
+
+                    @media(max-width: 768px) {
+                        width: 120px;
+                        height: 120px;
+                        margin-right: 12px;
+                    }
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                .name-wrap {
+                    @media(max-width: 1024px) {
+                        max-width: 220px;
+                    }
+                }
+
+                .name {
+                    margin-bottom: 5px;
+                    font-size: 18px;
+                    line-height: 29px;
+                    letter-spacing: 0.003em;
+                    color: #fff;
+
+                    @media(max-width: 768px) {
+                        margin-bottom: 0;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                    }
+                }
+
+                .rank {
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                    color: $color-grayscale-2;
+                }
+            }
         }
     }
 }
@@ -2328,70 +2455,70 @@ a {
     }
 }
 
-.img-block {
-    max-width: 220px;
+// .img-block {
+//     max-width: 220px;
 
-    @media(max-width: 1024px) {
-        display: flex;
-        max-width: 100%;
-        margin-bottom: 30px;
-        order: -1;
-    }
+//     @media(max-width: 1024px) {
+//         display: flex;
+//         max-width: 100%;
+//         margin-bottom: 30px;
+//         order: -1;
+//     }
 
-    @media(max-width: 1024px) {
-        margin-bottom: 17px;
-    }
+//     @media(max-width: 1024px) {
+//         margin-bottom: 17px;
+//     }
 
-    .img-wrap {
-        width: 220px;
-        height: 220px;
-        margin-bottom: 20px;
-        flex-shrink: 0;
+//     .img-wrap {
+//         width: 220px;
+//         height: 220px;
+//         margin-bottom: 20px;
+//         flex-shrink: 0;
 
-        @media(max-width: 1024px) {
-            margin: 0 20px 0 0;
-        }
+//         @media(max-width: 1024px) {
+//             margin: 0 20px 0 0;
+//         }
 
-        @media(max-width: 768px) {
-            width: 120px;
-            height: 120px;
-            margin-right: 12px;
-        }
+//         @media(max-width: 768px) {
+//             width: 120px;
+//             height: 120px;
+//             margin-right: 12px;
+//         }
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-    }
+//         img {
+//             max-width: 100%;
+//             max-height: 100%;
+//         }
+//     }
 
-    .name-wrap {
-        @media(max-width: 1024px) {
-            max-width: 220px;
-        }
-    }
+//     .name-wrap {
+//         @media(max-width: 1024px) {
+//             max-width: 220px;
+//         }
+//     }
 
-    .name {
-        margin-bottom: 5px;
-        font-size: 18px;
-        line-height: 29px;
-        letter-spacing: 0.003em;
-        color: #fff;
+//     .name {
+//         margin-bottom: 5px;
+//         font-size: 18px;
+//         line-height: 29px;
+//         letter-spacing: 0.003em;
+//         color: #fff;
 
-        @media(max-width: 768px) {
-            margin-bottom: 0;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: 0.005em;
-        }
-    }
+//         @media(max-width: 768px) {
+//             margin-bottom: 0;
+//             font-size: 16px;
+//             line-height: 24px;
+//             letter-spacing: 0.005em;
+//         }
+//     }
 
-    .rank {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.005em;
-        color: $color-grayscale-2;
-    }
-}
+//     .rank {
+//         font-size: 16px;
+//         line-height: 24px;
+//         letter-spacing: 0.005em;
+//         color: $color-grayscale-2;
+//     }
+// }
 .team {
     padding: 100px 0 100px;
     background-color: #fff;
@@ -4826,7 +4953,18 @@ a {
                 margin-bottom: 21px;
             }
         }
-        
+        .title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 42px;
+            margin-bottom: 30px;
+
+            @media (max-width: 768px) {
+                font-size: 22px;
+                line-height: 140%;
+                margin-bottom: 15px;
+            }
+        }
     }
     .vacancy-detail-description-wrapper {
         max-width: 745px;
@@ -5500,6 +5638,29 @@ a {
     .wrapper {
         max-width: 1045px;
     }
+    .projects-section {
+        padding-top: 80px;
+        @media (max-width: 1024px) {
+            padding: 60px 0 0 0;
+        }
+
+        @media (max-width: 768px) {
+            padding: 40px 0 0 0;
+        }
+        .item-wrap:nth-child(2){
+            @media (max-width: 1024px) {
+                display: none;
+            }
+            @media (max-width: 575px) {
+                display: block;
+            }
+        }
+        .title {
+            @media (max-width: 768px) {
+                font-size: 24px;
+            }
+        }
+    }
     .title-block {
         margin-bottom: 41px;
         @media (max-width: 768px) {
@@ -5860,6 +6021,7 @@ span[data-tooltip] {
         padding: 24px;
         background: $color-grayscale-6;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+            z-index: 999;
         .title {
             display: block;
             font-weight: bold;

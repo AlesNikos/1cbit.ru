@@ -66,6 +66,8 @@ h5, .h5 {
 h6, .h6 {
     font-size: 22px;
     line-height: 140%;
+    font-weight: 400;
+    color: #4E4B4B;
     @media (max-width: 768px) {
         font-size: 18px;
     }
@@ -681,10 +683,30 @@ h6, .h6 {
     background-image: url('../img/icons/20/icon-checkmark-pink.svg');
 }
 
+.icon-external-pink {
+    display: inline-block;
+    width: 12px;
+    min-width: 12px;
+    height: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/icons/12/icon-external-pink.svg');
+}
+
 .ig{background-image: url('../img/icons/20/icon-ig.svg');}
 .fb{background-image: url('../img/icons/20/icon-fb.svg');}
 .yt{background-image: url('../img/icons/20/icon-yt.svg');}
 .in{background-image: url('../img/icons/20/icon-ln.svg');}
+
+.link {
+    color: $color-pink-1;
+    @media (min-width: 992px) {
+        &:hover {
+            color: rgba($color-pink-1, 0.6);
+        }
+    }
+}
 
 ul {
     padding-left: 15px;
