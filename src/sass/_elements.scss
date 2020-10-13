@@ -189,7 +189,7 @@ h6, .h6 {
         &:before {
             content: '';
             position: absolute;
-            right: 60px;
+            right: 61px;
             top: 51%;
             width: 18px;
             height: 2px;
@@ -313,6 +313,7 @@ h6, .h6 {
 
         @media(max-width: 575px) {
             font-size: 22px;
+            max-width: 95%;
         }
     }
 
@@ -350,7 +351,7 @@ h6, .h6 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 30px 0;
+        padding: 32px 0;
 
         @media(max-width: 768px) {
             padding: 20px 0;
@@ -533,16 +534,17 @@ h6, .h6 {
         padding: 0;
         margin: 12px 0 0;
         width: auto !important;
+        min-width: 100px;
         
         ul {
-            padding: 0;
+            padding: 6px 0;
             margin: 0;
         }
         li {
             font-size: 16px;
             line-height: 150%;
             color: $color-grayscale-2;
-            padding: 20px 13px;
+            padding: 20px;
             transition: all 0.2s ease-in-out;
             @media (min-width: 992px){
                 &:hover {
@@ -613,6 +615,10 @@ h6, .h6 {
         @media (max-width: 768px) {
             font-size: 14px;
             padding: 25px 23px 6px;
+        }
+        &:-webkit-autofill::first-line { 
+            font-size: 1rem;
+            font-weight: 700;
         }
         &:focus, &:active  {
             border: none;
@@ -736,7 +742,7 @@ ul {
             top: 0.5em;
         }
         &:not(:last-child) {
-            margin-bottom: 10px;
+            margin-bottom: 9px;
             @media (max-width: 768px) {
 
             }
@@ -745,7 +751,7 @@ ul {
 }
 
 ol {
-    margin: 28px 0 32px;
+    margin: 28px 0 40px;
     padding: 0;
     counter-reset: item;
     @media (max-width: 768px) {
@@ -757,7 +763,7 @@ ol {
     li {
         display: flex;
         line-height: 160%;
-        margin-bottom: 10px;
+        margin-bottom: 9px;
         @media (max-width: 768px) {
             margin-bottom: 9px;
         }
