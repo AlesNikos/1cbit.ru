@@ -158,6 +158,8 @@
                         </div>
                         <button class="btn btn-primary btn-arrow">
                             Отправить заявку
+                            <object class="in-arrow" data="../../img/icons/28/arrow_button_in_white.svg" type="image/svg+xml"></object>
+                            <object class="out-arrow visible" data="../../img/icons/28/arrow_button_out_white.svg" type="image/svg+xml"></object>
                         </button>
                     </form>
                 </div>

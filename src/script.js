@@ -18,6 +18,22 @@ $(document).ready(function() {
         $(this).parent().toggleClass('opened');
     });
 
+    
+    $(document).ready(function(){
+        $('.btn-arrow, .searchbar-input').find('.out-arrow').removeClass('visible');
+        $('.btn-arrow, .searchbar-input').find('.in-arrow').addClass('visible');
+        $('.btn-arrow, .searchbar-input').find('.in-arrow').removeClass('visible');
+        $('.btn-arrow, .searchbar-input').find('.out-arrow').addClass('visible');
+    })
+    $('body').on('mouseenter', '.btn-arrow, .searchbar-input', function () {
+        $(this).find('.out-arrow').removeClass('visible');
+        $(this).find('.in-arrow').addClass('visible');
+    })
+    $('body').on('mouseleave', '.btn-arrow, .searchbar-input', function () {
+        $(this).find('.in-arrow').removeClass('visible');
+        $(this).find('.out-arrow').addClass('visible');
+    })
+
     var $tabs = function (target) {
         var
             _elemTabs = (typeof target === 'string' ? document.querySelector(target) : target),
@@ -137,6 +153,7 @@ $(document).ready(function() {
 if ($('.swiper-container').length > 0) {
 
     var swiper = new Swiper('.swiper-container', {
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',

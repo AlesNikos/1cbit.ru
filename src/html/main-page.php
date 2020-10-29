@@ -11,7 +11,10 @@
             <div class="container">
                 <h1 class="main-title">Мы делаем бизнес клиентов <span>сильнее</span></h1>
                 <div class="button">
-                    <a href="javascript:void(0)" class="btn btn-primary btn-arrow">Отправить заявку</a>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-arrow">Отправить заявку 
+                        <object class="in-arrow" data="../img/icons/28/arrow_button_in_white.svg" type="image/svg+xml"></object>
+                        <object class="out-arrow visible" data="../img/icons/28/arrow_button_out_white.svg" type="image/svg+xml"></object>
+                    </a>
                 </div>
                 <div class="services-section">
                     <div class="items row">
@@ -282,13 +285,13 @@
                     <a href="#" class="all-link">Все мероприятия</a>
                 </div>
                 <div class="items events-items">
-                    <div class="item">
+                    <a href="#" class="item">
                         <div class="date-block">
                             <div class="month">Сен</div>
                             <div class="date">05</div>
                         </div>
                         <div class="main-block">
-                            <a href="#" class="title">Основные подходы к роботизации бизнес-процессов</a>
+                            <div href="#" class="title">Основные подходы к роботизации бизнес-процессов</div>
                             <div class="desc">Первый Бит проводит вебинар о технологии RPA, в течение которого
                                 наши специалисты расскажут об основных подходах к роботизации бизнес-процессов.
                                 И на практических примерах покажут, как RPA изменит процессы в вашей компании.
@@ -299,14 +302,14 @@
                             <div class="event-date">08 октября 2019, вторник <br> с 16:00 до 18:00</div>
                             <div class="location"></div>
                         </div>
-                    </div>
-                    <div class="item">
+                    </a>
+                    <a href="#" class="item">
                         <div class="date-block">
                             <div class="month">Сен</div>
                             <div class="date">05</div>
                         </div>
                         <div class="main-block">
-                            <a href="#" class="title">Знакомство с Битрикс24: модули CRM, HR, Маркетинг</a>
+                            <div href="#" class="title">Знакомство с Битрикс24: модули CRM, HR, Маркетинг</div>
                             <div class="desc">Приглашаем руководителей отдела кадров, начальников отделов
                                 продаж, коммерческих и генеральных директоров на семинар «Знакомство с
                                 Битрикс24».
@@ -318,14 +321,14 @@
                             <div class="location">Москва, м. «Пролетарская» <br>ул. Воронцовская, д. 35А, стр.1
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
+                    </a>
+                    <a href="#" class="item">
                         <div class="date-block">
                             <div class="month">Сен</div>
                             <div class="date">10</div>
                         </div>
                         <div class="main-block">
-                            <a href="#" class="title">Бизнес-форум 1С:ERP</a>
+                            <div href="#" class="title">Бизнес-форум 1С:ERP</div>
                             <div class="desc">Фирма «1С» приглашает пользователей, потенциальных клиентов и
                                 партнёров принять участие в шестом бизнес-форуме, посвященном внедрениям и
                                 развитию «1С:ERP», «1С:Управление холдингом», «1С:Документооборот» и других
@@ -337,7 +340,7 @@
                             <div class="event-date">25 Сентября 2019, Среда <br>с 11:00 до 14:00</div>
                             <div class="location">Москва, ст. м. «Пролетарская» Воронцовская ул., 35Бк2</div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="button-wrap">
                     <a href="#" class="btn-more">Показать еще</a>
@@ -489,6 +492,8 @@
                         </div>
                         <button class="btn btn-primary btn-arrow">
                             Отправить заявку
+                            <object class="in-arrow" data="../img/icons/28/arrow_button_in_white.svg" type="image/svg+xml"></object>
+                            <object class="out-arrow visible" data="../img/icons/28/arrow_button_out_white.svg" type="image/svg+xml"></object>
                         </button>
                     </form>
                 </div>

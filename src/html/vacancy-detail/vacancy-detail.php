@@ -7,7 +7,10 @@
                     <div class="container">
                         <h1 class="main-title">Консультант 1С</h1>
                         <div class="subtitle">Маркетинг и продажи</div>
-                        <a href="" class="btn btn-primary btn-arrow">Откликнуться</a>
+                        <a href="" class="btn btn-primary btn-arrow">Откликнуться
+                            <object class="in-arrow" data="../../img/icons/28/arrow_button_in_white.svg" type="image/svg+xml"></object>
+                            <object class="out-arrow visible" data="../../img/icons/28/arrow_button_out_white.svg" type="image/svg+xml"></object>
+                        </a>
                     </div>
                 </div>
                 <div class="vacancy-detail-description">
@@ -150,6 +153,8 @@
                                     </div>
                                     <button class="btn btn-primary btn-arrow">
                                         Отправить заявку
+                                        <object class="in-arrow" data="../../img/icons/28/arrow_button_in_white.svg" type="image/svg+xml"></object>
+                                        <object class="out-arrow visible" data="../../img/icons/28/arrow_button_out_white.svg" type="image/svg+xml"></object>
                                     </button>
                                 </form>
                             </div>

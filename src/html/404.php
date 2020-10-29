@@ -8,7 +8,7 @@
                     <div class="text">
                         Пожалуйста, <a href="#">свяжитесь с нами</a> или воспользуйтесь страницей <a href="#">поиска по сайту</a>.
                     </div>
-                    <div class="img" style="background-image: url('../img/404.png');"></div>
+                    <div class="img" style="background-image: url('../img/404.jpg');"></div>
                 </div>
             </div>
         </div>

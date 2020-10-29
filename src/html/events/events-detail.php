@@ -23,7 +23,10 @@
                             <div class="event-date">04 Июля 2019, Четверг<br>с 11:00 до 15:00</div>
                             <div class="location">Москва, м. «Пролетарская»<br>ул. Воронцовская, д. 35А, стр.1</div>
                             <div class="button">
-                                <a href="javascript:void(0)" class="btn btn-primary btn-arrow">Регистрация</a>
+                                <a href="javascript:void(0)" class="btn btn-primary btn-arrow">Регистрация
+                                    <object class="in-arrow" data="../../img/icons/28/arrow_button_in_white.svg" type="image/svg+xml"></object>
+                                    <object class="out-arrow visible" data="../../img/icons/28/arrow_button_out_white.svg" type="image/svg+xml"></object>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -258,6 +261,8 @@
                             </div>
                             <button class="btn btn-primary btn-arrow">
                                 Отправить заявку
+                                <object class="in-arrow" data="../../img/icons/28/arrow_button_in_white.svg" type="image/svg+xml"></object>
+                                <object class="out-arrow visible" data="../../img/icons/28/arrow_button_out_white.svg" type="image/svg+xml"></object>
                             </button>
                         </form>
                     </div>

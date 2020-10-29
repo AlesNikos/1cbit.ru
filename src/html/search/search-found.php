@@ -7,7 +7,10 @@
                     <div class="container">
                         <form action="" class="searchbar-input">
                             <input type="text" placeholder="Поиск по сайту">
-                            <a href="javascript:void(0);" class="search-button"></a>
+                            <a href="javascript:void(0);" class="search-button">
+                                <object class="in-arrow" data="../../img/icons/28/arrow_button_in_grey.svg" type="image/svg+xml"></object>
+                                <object class="out-arrow visible" data="../../img/icons/28/arrow_button_out_grey.svg" type="image/svg+xml"></object>
+                            </a>
                         </form>
                     </div>
                 </div>

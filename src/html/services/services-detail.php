@@ -8,7 +8,10 @@
                     <h1 class="main-title">Автоматизация розничного магазина</h1>
                     <div class="subtitle">Эксперты в автоматизации розницы с 1997 года. Нам доверяют более 25000 магазинов</div>
                     <div class="button">
-                        <a href="javascript:void(0)" class="btn btn-primary btn-arrow">Отправить заявку</a>
+                        <a href="javascript:void(0)" class="btn btn-primary btn-arrow">Отправить заявку
+                            <object class="in-arrow" data="../../img/icons/28/arrow_button_in_white.svg" type="image/svg+xml"></object>
+                            <object class="out-arrow visible" data="../../img/icons/28/arrow_button_out_white.svg" type="image/svg+xml"></object>
+                        </a>
                     </div>
 
                 </div>
@@ -180,6 +183,8 @@
                             </div>
                             <button class="btn btn-primary btn-arrow">
                                 Отправить заявку
+                                <object class="in-arrow" data="../../img/icons/28/arrow_button_in_white.svg" type="image/svg+xml"></object>
+                                <object class="out-arrow visible" data="../../img/icons/28/arrow_button_out_white.svg" type="image/svg+xml"></object>
                             </button>
                         </form>
                     </div>
